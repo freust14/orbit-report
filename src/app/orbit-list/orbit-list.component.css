@@ -10,21 +10,28 @@
 
 table {
   color: rgb(64, 5, 78);
+  font-size: 18px;
+  font-weight: bold;
   border-radius: 5px;
   overflow: hidden;
   margin: 12px 0;
   min-width: 300px;
   background: #dad8d8;
+  border-collapse: collapse;
+  
 }
 
 .header-row {
     background: #34495E;
-    color: #fff
+    color: #fff;
+    font-size: 24px;
+    
 }
 
 th, td {
     text-align: left;
     margin: 5px 10px;
     padding: 6px;
+    
     
 }

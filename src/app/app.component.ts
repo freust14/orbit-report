@@ -11,6 +11,7 @@ import { Satellite } from './satellite';
 export class AppComponent {
   sourceList: Satellite[];
   title: string = 'orbit-report';
+  
   constructor() {
     this.sourceList =  [
        new Satellite ("SiriusXM", "Communication", "2009-03-21", "LOW", true),

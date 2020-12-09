@@ -5,6 +5,7 @@
 
 .warning {
     background-color: #e45b0b;
+
 }
 
 table {
@@ -25,4 +26,5 @@ th, td {
     text-align: left;
     margin: 5px 10px;
     padding: 6px;
+    
 }

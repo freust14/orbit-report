@@ -2,12 +2,10 @@
     cursor: pointer;
     color: #dd5;
     font-size: 24px;
-
 }
 
 .warning {
     background-color: #e45b0b;
-
 }
 
 table {
@@ -19,25 +17,22 @@ table {
   margin: 12px 0;
   min-width: 300px;
   background: #dadad8;
-  border-style: 2px solid gray;
-  /* border-width: 2px; */
-  
+  /* border-style: 2px solid;
+  border-color: black; */
 }
 
 .header-row {
     background: #34495E;
     color: #fff;
     font-size: 24px;
-    border-style: solid;
-    
-    
-    
 }
 
 th, td {
     text-align: left;
     margin: 5px 10px;
     padding: 6px;
-    
 }
 
+tr:nth-child(even) {
+    background-color: rgb(123, 212, 123);
+}

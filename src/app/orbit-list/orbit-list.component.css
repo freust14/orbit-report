@@ -1,6 +1,8 @@
 .sortable {
     cursor: pointer;
     color: #dd5;
+    font-size: 24px;
+
 }
 
 .warning {
@@ -10,14 +12,15 @@
 
 table {
   color: rgb(64, 5, 78);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   border-radius: 5px;
   overflow: hidden;
   margin: 12px 0;
   min-width: 300px;
-  background: #dad8d8;
-  border-collapse: collapse;
+  background: #dadad8;
+  border-style: 2px solid gray;
+  /* border-width: 2px; */
   
 }
 
@@ -25,6 +28,9 @@ table {
     background: #34495E;
     color: #fff;
     font-size: 24px;
+    border-style: solid;
+    
+    
     
 }
 
@@ -33,5 +39,5 @@ th, td {
     margin: 5px 10px;
     padding: 6px;
     
-    
 }
+

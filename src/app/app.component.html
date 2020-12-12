@@ -1,6 +1,10 @@
 <app-orbit-list [satellites]="displayList"></app-orbit-list>
 
 <div class="search-form">
+    <!-- Search by: <label>Name<input type="radio" name="searchType" value="name"/></label>
+    <label>Type<input type="radio" name="searchType" value="type"/></label>
+    <label>Orbit Type<input type="radio" name="searchType" value="orbitType"/></label> -->
+
     <input #searchTerm (keyup.enter)="search(searchTerm.value)" type="text" placeholder="Enter search term"/>
     <button (click)="search(searchTerm.value)">Search</button>
 </div>

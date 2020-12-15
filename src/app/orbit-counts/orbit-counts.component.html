@@ -1,11 +1,17 @@
 <h3>Satellite Counts:</h3>
-<div class="counts">
+<!-- <div class='counts' *ngIf="satellites.length !== 9; else maxSatellites">
    <div>Total: <span>{{satellites.length}}</span></div>
-   
-   <div>Space Debris: <span>{{countByType("Space Debris")}}</span></div>
-   <div>Communication: <span>{{countByType("Communication")}}</span></div>
-   <div>Probe: <span>{{countByType("Probe")}}</span></div>
-   <div>Positioning: <span>{{countByType("Positioning")}}</span></div>
-   <div>Space Station: <span>{{countByType("Space Station")}}</span></div>
-   <div>Telescope: <span>{{countByType("Telescope")}}</span></div>
+   <div *ngFor = "let satellite of satellites">Total {{satellite.type}}: <span>{{countByType(satellite.type)}}</span></div>
 </div>
+
+<ng-template #maxSatellites> -->
+<div class='counts' > 
+<div >Total: <span>{{satellites.length}}</span></div>
+   <div>Total Space Debris: <span>{{countByType("Space Debris")}}</span></div>
+   <div>Total Communication: <span>{{countByType("Communication")}}</span></div>
+   <div>Total Probe: <span>{{countByType("Probe")}}</span></div>
+   <div>Total Positioning: <span>{{countByType("Positioning")}}</span></div>
+   <div>Total Space Station: <span>{{countByType("Space Station")}}</span></div>
+   <div>Total Telescope: <span>{{countByType("Telescope")}}</span></div>
+</div>
+<!-- </ng-template> -->

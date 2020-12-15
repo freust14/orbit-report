@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { count } from 'console';
+// import { count } from 'console';
 import { Satellite } from '../satellite';
 
 @Component({
@@ -16,10 +16,13 @@ export class OrbitCountsComponent implements OnInit {
 
   countByType(type: string): number {
     let count: number = 0;
-    for (let i=0; i<this.satellites.length; i++) {
-      if (type.toLowerCase() === this.satellites[i].type.toLowerCase()) {
+    let index: number = 0;
+    while (index < this.satellites.length) {
+        if (type.toLowerCase() === this.satellites[index].type.toLowerCase()) {
         count +=1;
       }
+      index = index + 1;
+     
     }
     return count;
   }

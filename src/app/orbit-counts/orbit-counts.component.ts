@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 // import { count } from 'console';
 import { Satellite } from '../satellite';
 
+
 @Component({
   selector: 'app-orbit-counts',
   templateUrl: './orbit-counts.component.html',
@@ -9,6 +10,7 @@ import { Satellite } from '../satellite';
 })
 export class OrbitCountsComponent implements OnInit {
   @Input() satellites: Satellite[];
+  @Input() searchType: string;
   constructor() { }
 
   ngOnInit() {

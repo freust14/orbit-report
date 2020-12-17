@@ -13,7 +13,6 @@ export class AppComponent {
   title: string = 'orbit-report';
   displayList: Satellite[];
   
- 
   constructor() {
     this.sourceList = [];
     this.displayList = []
@@ -46,7 +45,8 @@ export class AppComponent {
     } 
      if (category.indexOf(searchTerm) >= 0) {
         matchingSatellites.push(this.sourceList[i]);
-     }
+        }
+     
   }
  
   this.displayList = matchingSatellites;

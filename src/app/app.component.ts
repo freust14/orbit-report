@@ -46,10 +46,7 @@ export class AppComponent {
      if (category.indexOf(searchTerm) >= 0) {
         matchingSatellites.push(this.sourceList[i]);
         }
-     
-  }
- 
-  this.displayList = matchingSatellites;
+    }
+   this.displayList = matchingSatellites;
 }
-
 }
